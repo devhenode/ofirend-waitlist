@@ -1,7 +1,7 @@
 <template>
-  <section>
-    <div >
-      <img :src="imge" class="h-screen md:bg-no-repeat absolute md:bg-cover w-full" alt="" />
+  <section class="h-svh">
+    <div>
+      <img :src="imge" class="h-svh md:bg-no-repeat absolute md:bg-cover md:w-full" alt="" />
 
     </div>
     <div class="mx-auto parent grid sm:p-1 md:flex 
@@ -16,7 +16,7 @@
         <div class="p-2 md:py-8 flex space-x-4">
           <input type="email" placeholder="Enter your email" name="" class="block px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400"> 
           <button class="bg-blue-950 py-2 px-3 font-bold text-white md:px-5 md:py-2 rounded-md md:font-extrabold ">Join Waitlist</button>
-        </div>
+        </div> 
         
       </div>
 
@@ -37,6 +37,7 @@
     
     <!-- <info-view></info-view> -->
   </section>
+  <br>
 </template>
 
 <script setup>
@@ -47,4 +48,6 @@ import icon from '@/assets/wtvec.png'
 // import InfoView from '@/components/Hero/InfoView.vue'
 </script>
 
-<style scoped></style>
+<style scoped>
+
+</style>
