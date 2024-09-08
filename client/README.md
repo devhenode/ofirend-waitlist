@@ -27,3 +27,4 @@ npm run dev
 ```sh
 npm run build
 ```
+<!-- https://ofriend-waitlist.vercel.app -->
