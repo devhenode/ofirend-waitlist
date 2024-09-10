@@ -20,7 +20,7 @@
         
       </div>
 
-      <div class="mx-auto mt-10 items-center justify-center text-center md:py-8 lg:w-[500px]">
+      <div class="mx-auto items-center justify-center text-center md:py-8 lg:w-[500px]">
         <img :src="vector"  class="vec  w-[59%] bottom-1 md:top-[125px] inline absolute  mx-3 md:right-25  md:w-1/6">
           <img :src="profile" class="prof w-[200px] -top-2 z-10  inline relative mx-9 md:w-1/2 md:right-8" alt="">
         </img>
