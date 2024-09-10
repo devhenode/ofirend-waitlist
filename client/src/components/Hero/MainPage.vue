@@ -1,5 +1,5 @@
 <template>
-  <section class="h-svh">
+  <section class="h-svh md:w-full md:overflow-hidden">
     <div>
       <img :src="imge" class="h-svh md:bg-no-repeat absolute md:bg-cover md:w-full" alt="" />
 
@@ -8,21 +8,23 @@
       relative sm:justify-between md:px-12"
     >
       <div class="text-area px-5 md:mx-9 md:px-5 
-        py-14"
+        py-14 md:mt-10"
       >
-        <h1 class="text-auto mb-2 text-4xl md:text-5xl font-black text-blue-950 mt-2 leading-tight md:leading-none md:">Why go solo when learning is better <br> together?</h1>
-        <p class="text-auto max-w-xs text-md leading-relaxed px-2 py-3 text-blue-1000 md:px-3">Connect with like-minded nerds has never been easier say hello to a new era of social studying
+        <h1 class="text-auto mb-2 text-4xl md:text-7xl font-black text-blue-950 mt-2 leading-tight md:leading-none md:">Why go solo when learning is better <br> together?</h1>
+        <p class="text-auto max-w-xs text-md leading-relaxed px-2 py-3 text-blue-1000 md:px-3 md:text-lg md:">Connect with like-minded nerds has never been easier
+          
+          say hello to a new era of social studying
         </p>
         <div class="p-2 md:py-8 flex space-x-2">
-          <input type="email" placeholder="Enter your email" name="" class="block h-8 px-1 py-1 md:px-3 md:py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400"> 
-          <button class="bg-blue-950 text-[10px] h-8 px-2 py-1 md:py-2 md:px-3 font-bold text-white md:px-5 md:py-2 rounded-md md:font-extrabold ">Join Waitlist</button>
+          <input type="email" placeholder="Enter your email" name="" class="block h-8 px-1 py-1 md:px-3 md:py-2 md:h-14 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400"> 
+          <button class="bg-blue-950 text-[10px] h-8 px-2 py-1 md:text-[20px] md:h-14 md:py-2 md:px-3 font-bold text-white rounded-md md:font-extrabold ">Join Waitlist</button>
         </div> 
         
       </div>
 
-      <div class="mx-auto items-center justify-center text-center md:py-8 lg:w-[500px]">
-        <img :src="vector"  class="vec  w-[59%] bottom-1 md:top-[125px] inline absolute  mx-3 md:right-25  md:w-1/6">
-          <img :src="profile" class="prof w-[200px] -top-2 z-10  inline relative mx-9 md:w-1/2 md:right-8" alt="">
+      <div class="mx-auto items-center justify-center text-center md:py-8">
+        <img :src="vector"  class="vec md:w-[30%] w-[59%] bottom-1 md:top-[155px] inline absolute  mx-3 md:right-36">
+          <img :src="profile" class="prof w-[200px] -top-1 z-10  inline relative mx-9 md:w-[97%] md:top-[-5px] md:right-24" alt="">
         </img>
       </div>
 

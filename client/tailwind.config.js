@@ -8,7 +8,7 @@ export default {
     screens: {
     // 'sm': '320px',
     //   // => @media (min-width: 320px) {...}
-  //  'md': '640px',
+   'md': '640px',
     //   // => @media (min-width: 640px) { ... }
 
     //   //'lg': '1024px',
