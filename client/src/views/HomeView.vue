@@ -5,7 +5,7 @@ import PageTwo from '@/components/Hero/PageTwo.vue'
 </script>
 
 <template>
-  <main>
+  <main class="w-screen">
     <nav-bar></nav-bar>
     <main-page></main-page>
     <br>
