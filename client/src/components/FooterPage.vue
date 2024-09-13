@@ -1,28 +1,45 @@
 <template>
+  <!-- Input Box section to collect data -->
   <section class="mx-4 w-[90%] md:mx-20 rounded-3xl bg-white dark:bg-blue-950">
     <div class="py-4 md:max-w-full md:py-8 md:px-2">
       <div class=" md:mx-10">
         <h2 class="mb-2 text-sm text-center whitespace-nowrap italic font-bold text-white md:text-5xl ">Subscribe to get notified on new updates</h2>
         <p class="mb-8 font-light whitespace-nowrap md:text-2xl md:mb-12 text-center text-[9px] text-white">Stay in touch, so we can reach out to you with our latest <br> news and exclusive offers.</p>
-        <form action="#">
+        
+        <form @submit.prevent="submitForm">
           <div class="items-center mb-3 space-y-2 max-w-screen-sm flex sm:space-y-0">
             <div class="relative w-5/6 md:w-[40%] mx-auto">
-              <label for="email" class="hidden mb-2 text-sm font-medium">Email address</label>
-              <div class="relative flex items-center">
-                <input
-                  class="block p-2 md:p-3 text-sm md:pl-4 md:text-lg w-full text-black rounded-xl border border-gray-300 focus:ring-primary-500 focus:border-primary-500 bg-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                  placeholder="Enter your email"
-                  type="email"
-                  id="email"
-                  required=""
+
+              <div>
+                <label for="name" class="hidden mb-2 text-sm font-medium">Name</label>
+                <input 
+                  class="p-2 mb-2 md:p-3 text-sm md:pl-4 md:text-lg w-full text-black rounded-xl border border-gray-300 focus:ring-primary-500 focus:border-primary-500 bg-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                  type="text" 
+                  placeholder="Enter your name"
+                  v-model="name" 
+                  id="name"
+                  required
                 >
-                <button
-                  type="submit"
-                  class="absolute text-sm md:text-lg right-0 top-0 h-full px-3 md:px-5 font-medium text-center text-white bg-sky-300 rounded-lg cursor-pointer hover:bg-sky-600 focus:ring-4 focus:ring-sky-300 dark:bg-sky-600 dark:hover:bg-sky-700 dark:focus:ring-sky-800"
-                >
-                  Subscribe
-                </button>
               </div>
+              <label for="email" class="hidden mb-2 text-sm font-medium">Email address</label>
+                <div class="relative flex items-center">
+                  <input
+                    class="block p-2 md:p-3 text-sm md:pl-4 md:text-lg w-full text-black rounded-xl border border-gray-300 focus:ring-primary-500 focus:border-primary-500 bg-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                    placeholder="Enter your email"
+                    v-modal="email"
+                    type="email"
+                    id="email"
+                    required
+                  >
+                  <button
+                    type="submit"
+                    class="absolute text-sm md:text-lg right-0 top-0 h-full px-3 md:px-5 font-medium text-center text-white bg-sky-300 rounded-lg cursor-pointer hover:bg-sky-600 focus:ring-4 focus:ring-sky-300 dark:bg-sky-600 dark:hover:bg-sky-700 dark:focus:ring-sky-800"
+                  >
+                    Subscribe
+                  </button>
+
+                  <p v-if="responseMessage">{{ responseMessage }}</p>
+                </div>
             </div>
           </div>
         </form>
@@ -104,6 +121,27 @@
 
 <script setup>
 import logoIcon from '@/assets/logo-icon.png' 
+import { ref } from 'vue'
+import axiosInstance from '@/axios';
+
+const name = ref('');
+const email = ref('');
+const responseMessage = ref('');
+
+const submitForm = async () => {
+  try {
+    const response = await axiosInstance.post('/submit', {
+      name: name.value,
+      email: email.value,
+    });
+
+    // Handle succesful response
+    responseMessage.value = `Success: ${respone.data.message}`;
+  } catch (error) {
+    // Handle error Message 
+    responseMessage.value = `Error: ${error.message}`
+  }
+}
 
 const footerOne = [
   {name: 'Home', href: '#'},
