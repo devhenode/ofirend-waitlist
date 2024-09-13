@@ -1,16 +1,16 @@
 <template>
-  <section class="mx-4 w-[90%] md:w-1/2 rounded-3xl bg-white dark:bg-blue-950">
+  <section class="mx-4 w-[90%] md:mx-20 rounded-3xl bg-white dark:bg-blue-950">
     <div class="py-4 md:max-w-full md:py-8 md:px-2">
       <div class=" md:mx-10">
-        <h2 class="mb-2 text-sm text-center whitespace-nowrap italic font-bold text-white md:text-3xl ">Subscribe to get notified on new updates</h2>
-        <p class="mb-8 font-light whitespace-nowrap md:text-lg md:mb-12 text-center text-[9px] text-white">Stay in touch, so we can reach out to you with our latest <br> news and exclusive offers.</p>
+        <h2 class="mb-2 text-sm text-center whitespace-nowrap italic font-bold text-white md:text-5xl ">Subscribe to get notified on new updates</h2>
+        <p class="mb-8 font-light whitespace-nowrap md:text-2xl md:mb-12 text-center text-[9px] text-white">Stay in touch, so we can reach out to you with our latest <br> news and exclusive offers.</p>
         <form action="#">
           <div class="items-center mb-3 space-y-2 max-w-screen-sm flex sm:space-y-0">
-            <div class="relative w-5/6 md:w-3/5 mx-auto">
+            <div class="relative w-5/6 md:w-[40%] mx-auto">
               <label for="email" class="hidden mb-2 text-sm font-medium">Email address</label>
               <div class="relative flex items-center">
                 <input
-                  class="block p-2 md:p-3 text-sm md:pl-4 w-full text-black rounded-xl border border-gray-300 focus:ring-primary-500 focus:border-primary-500 bg-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                  class="block p-2 md:p-3 text-sm md:pl-4 md:text-lg w-full text-black rounded-xl border border-gray-300 focus:ring-primary-500 focus:border-primary-500 bg-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                   placeholder="Enter your email"
                   type="email"
                   id="email"
@@ -18,7 +18,7 @@
                 >
                 <button
                   type="submit"
-                  class="absolute text-sm right-0 top-0 h-full px-3 md:px-5 font-medium text-center text-white bg-sky-300 rounded-lg cursor-pointer hover:bg-sky-600 focus:ring-4 focus:ring-sky-300 dark:bg-sky-600 dark:hover:bg-sky-700 dark:focus:ring-sky-800"
+                  class="absolute text-sm md:text-lg right-0 top-0 h-full px-3 md:px-5 font-medium text-center text-white bg-sky-300 rounded-lg cursor-pointer hover:bg-sky-600 focus:ring-4 focus:ring-sky-300 dark:bg-sky-600 dark:hover:bg-sky-700 dark:focus:ring-sky-800"
                 >
                   Subscribe
                 </button>
@@ -32,10 +32,10 @@
   </section>
 
   <footer class="w-full">
-    <div class="flex justify-between py-3 px-2 w-3/4 md:px-20 md:py-6 md:mx-auto bg-white">
+    <div class="flex justify-between py-3 px-2 w-3/4 md:py-6 md:px-0 md:mx-auto bg-white">
       <div>
         <div class="my-4">        
-          <svg width="120" height="40" viewBox="0 0 64 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="120" height="40" viewBox="0 0 64 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="md:w-[60%]">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M6.61419 3.37002C13.6734 2.47369 14.4841 10.6841 8.50564 11.4728C1.37882 12.3692 0.3656 4.19469 6.61419 3.37002ZM0.0278106 8.21021C0.3656 12.6918 3.7432 15.1298 8.30299 14.7714C12.5588 14.4845 15.3622 11.4728 14.9569 6.56101C14.5854 2.11528 11.2077 -0.286936 6.68169 0.0716245C2.45969 0.394283 -0.309978 3.37017 0.0278106 8.21036V8.21021Z" fill="#00132B"/>
             <path fill-rule="evenodd" clip-rule="evenodd" d="M58.5281 6.30999C61.7706 5.37777 62.3448 11.9031 59.5077 12.5485C57.8527 12.9428 56.9406 11.6163 56.7718 10.0388C56.5692 8.2102 57.1096 6.70446 58.5283 6.30999H58.5281ZM61.2978 5.80798C60.9938 5.48532 60.8587 5.12676 60.4872 4.7682C59.4063 3.76432 57.6837 3.65676 56.3665 4.30208C53.1577 5.91553 53.1241 12.7994 56.299 14.4843C57.1772 14.9863 58.4269 15.058 59.4402 14.6994C60.521 14.3409 60.7573 13.7672 61.3316 13.0143C61.3991 14.0899 61.8044 15.058 62.9866 14.7711C64.0336 14.5201 63.9998 13.4803 63.9998 12.2972V1.75641C63.9998 0.609073 63.5607 -0.179699 62.3785 0.0354065C61.3315 0.21461 61.2976 1.29029 61.2976 2.47338C61.2976 3.58481 61.2976 4.69624 61.2976 5.80767L61.2978 5.80798Z" fill="#00132B"/>
             <path fill-rule="evenodd" clip-rule="evenodd" d="M36.4387 6.05898C38.4992 5.52121 40.0865 8.28184 37.6548 8.31774C36.9117 8.31774 35.4255 8.6045 35.1216 7.81573C34.7838 6.8835 35.7633 6.23818 36.4387 6.05898ZM34.7161 10.0745C35.6957 10.0745 41.1337 10.3255 41.539 9.75183C42.0119 9.14226 41.539 7.31371 41.3025 6.66839C40.1203 3.72841 36.5062 3.11899 34.1757 4.62473C31.3385 6.48919 31.1359 12.7276 34.6148 14.4486C38.195 16.2771 42.4847 13.0861 41.0324 11.7237C40.7621 11.4727 39.9853 11.4369 39.5462 11.5443C39.0733 11.6519 38.8706 12.0822 38.5667 12.3331C37.6548 13.1937 34.6823 13.3011 34.7161 10.0743V10.0745Z" fill="#00132B"/>
@@ -48,12 +48,12 @@
         </div>
 
         <div class="flex justify-between">
-          <div class="grid whitespace-nowrap text-[9px] justify-between">
+          <div class="grid whitespace-nowrap text-[9px] md:px-4 md:text-[16px] justify-between">
             <p>Phone number</p>
             <p>09018699546</p>
           </div>
 
-          <div class="grid pl-2 text-[9px] md:mx-3 justify-between">
+          <div class="grid pl-2 text-[9px] md:text-[16px] md:mx-3 justify-between">
             <p>Email</p>
             <a class="underline">ofriend@gmail.com</a>
           </div>
@@ -61,15 +61,15 @@
         </div>
       </div>
       <div class="flex my-5 h-2/3 ml-9 space-y-4 space-x-2 justify-between">
-        <div class="grid text-[9px] mt-5 text-nowrap space-y-6">
+        <div class="grid text-[9px] md:text-[16px] mt-5 text-nowrap space-y-6">
           <a v-for="link in footerOne" :key="link.name" :href="link.href">{{ link.name }}</a>
         </div>
 
-        <div class="grid text-[9px]  space-y-6">
+        <div class="grid text-[9px] md:text-[16px]  space-y-6">
           <a v-for="link in footerTwo" :key="link.name" :href="link.href">{{ link.name }}</a>
         </div>
 
-        <div class="grid text-nowrap text-[9px] space-y-6">
+        <div class="grid text-nowrap text-[9px] md:text-[16px] space-y-6">
           <a v-for="link in footerThree" :key="link.name" :href="link.href">{{ link.name }}</a>
         </div>     
       </div>
