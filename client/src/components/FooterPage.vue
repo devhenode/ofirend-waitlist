@@ -38,7 +38,7 @@
                     Subscribe
                   </button>
 
-                  <p v-if="responseMessage">{{ responseMessage }}</p>
+                  <!-- <p v-if="responseMessage" class="bg-red mt-5 mx-auto">{{ responseMessage }}</p> -->
                 </div>
             </div>
           </div>

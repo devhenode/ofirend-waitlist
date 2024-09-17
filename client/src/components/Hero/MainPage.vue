@@ -16,6 +16,7 @@
           say hello to a new era of social studying
         </p>
         <div class="p-2 md:py-8 flex space-x-2">
+          <input type="text" placeholder="Enter your name" name="" class="block h-8 px-1 py-1 md:px-3 md:py-2 md:h-14 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400"> 
           <input type="email" placeholder="Enter your email" name="" class="block h-8 px-1 py-1 md:px-3 md:py-2 md:h-14 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400"> 
           <button class="bg-blue-950 text-[10px] h-8 px-2 py-1 md:text-[20px] md:h-14 md:py-2 md:px-3 font-bold text-white rounded-md md:font-extrabold ">Join Waitlist</button>
         </div> 
@@ -47,9 +48,28 @@ import imge from '@/assets/bground.png';
 import vector from '@/assets/vector.png';
 import profile from '@/assets/girl.png';
 import icon from '@/assets/wtvec.png'
+
+import { ref } from 'vue'
+import axiosInstance from '@/axios';
+
+const name = ref('');
+const email = ref('');
+const responseMessage = ref('');
+
+const submitForm = async () => {
+  try {
+    const response = await axiosInstance.post('/submit', {
+      name: name.value,
+      email: email.value,
+    });
+
+    // Handle succesful response
+    responseMessage.value = `Success: ${respone.data.message}`;
+  } catch (error) {
+    // Handle error Message 
+    responseMessage.value = `Error: ${error.message}`
+  }
+}
+
 // import InfoView from '@/components/Hero/InfoView.vue'
 </script>
-
-<style scoped>
-
-</style>
