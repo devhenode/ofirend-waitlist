@@ -10,7 +10,6 @@ import PageTwo from '@/components/Hero/PageTwo.vue'
     <main-page></main-page>
     <br>
     <page-two></page-two>
-    <!-- <h3>Hello from Home</h3> -->
 
   </main>
 </template>
