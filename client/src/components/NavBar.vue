@@ -44,8 +44,8 @@ import menu from '@/assets/menu.png'
 import logoIcon from '@/assets/logo-icon.png' 
 
 const navigation = [
-  { name: 'Home', href: '#', current: true },
-  { name: 'About', href: '#', current: false },
+  { name: 'Home', href: '/', current: true },
+  { name: 'About', href: '/about', current: false },
   { name: 'Bootcamp', href: '#', current: false },
 ]
 </script>
