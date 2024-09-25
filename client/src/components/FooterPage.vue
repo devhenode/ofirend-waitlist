@@ -26,7 +26,7 @@
                   <input
                     class="block p-2 md:p-3 text-sm md:pl-4 md:text-lg w-full text-black rounded-xl border border-gray-300 focus:ring-primary-500 focus:border-primary-500 bg-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                     placeholder="Enter your email"
-                    v-modal="email"
+                    v-model="email"
                     type="email"
                     id="email"
                     required
@@ -34,6 +34,7 @@
                   <button
                     type="submit"
                     class="absolute text-sm md:text-lg right-0 top-0 h-full px-3 md:px-5 font-medium text-center text-white bg-sky-300 rounded-lg cursor-pointer hover:bg-sky-600 focus:ring-4 focus:ring-sky-300 dark:bg-sky-600 dark:hover:bg-sky-700 dark:focus:ring-sky-800"
+                    
                   >
                     Subscribe
                   </button>
@@ -137,9 +138,11 @@ const submitForm = async () => {
 
     // Handle succesful response
     responseMessage.value = `Success: ${response.data.message}`;
+    console.log("Successful")
   } catch (error) {
     // Handle error Message 
-    responseMessage.value = `Error: ${error.message}`
+    responseMessage.value = `Error: ${error.message}`;
+    console.log("Failed")
   }
 }
 

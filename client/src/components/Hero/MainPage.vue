@@ -18,7 +18,13 @@
         <div class="grid p-2 space-y-2 md:py-8 md:flex md:space-x-2">
           <input type="text" placeholder="Enter your name" name="" class="block h-8 px-1 py-1 md:px-3 md:py-2 md:h-14 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400"> 
           <input type="email" placeholder="Enter your email" name="" class="block h-8 px-1 py-1 md:px-3 md:py-2 md:h-14 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400"> 
-          <button class="bg-blue-950 text-[10px] h-8 px-2 py-1 md:text-[20px] md:h-14 md:py-2 md:px-3 font-bold text-white rounded-md md:font-extrabold ">Join Waitlist</button>
+          <button class="bg-blue-950 text-[10px] 
+            h-8 px-2 py-1 md:text-[20px] 
+            md:h-14 md:py-2 md:px-3 font-bold text-white 
+            rounded-md md:font-extrabold "
+          >
+          Join Waitlist
+        </button>
         </div> 
         
       </div>

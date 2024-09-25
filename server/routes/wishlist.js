@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Wishlist = require('../models/wishlist');
 
-router.post('/add', async (req, res) => {
+router.post('/submit', async (req, res) => {
   try {
     const { name, email } = req.body;
 

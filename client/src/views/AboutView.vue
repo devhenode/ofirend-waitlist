@@ -1,8 +1,8 @@
 <script setup>
 import NavBar from '@/components/AboutPage/NavBar.vue';
 import HeroPage from '@/components/AboutPage/HeroPage.vue';
-import VisionPage from '@/components/AboutPage/SlideTwo.vue';
-import ChallengePage from '@/components/AboutPage/SlideThree.vue';
+import SlideTwo from '@/components/AboutPage/SlideTwo.vue';
+import SlideThree from '@/components/AboutPage/SlideThree.vue';
 import SlideFour from '@/components/AboutPage/SlideFour.vue';
 import SlideFive from '@/components/AboutPage/SlideFive.vue';
 import SlideSix from '@/components/AboutPage/SlideSix.vue';
@@ -16,8 +16,8 @@ import FooterPage from '@/components/FooterPage.vue';
       <nav-bar></nav-bar>
       <hr>
       <hero-page></hero-page>
-      <vision-page></vision-page>
-      <challenge-page></challenge-page>
+      <slide-two></slide-two>
+      <slide-three></slide-three>
       <slide-four></slide-four>
       <slide-five></slide-five>
       <slide-six></slide-six>
