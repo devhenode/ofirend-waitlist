@@ -18,7 +18,7 @@
                   placeholder="Enter your name"
                   v-model="name" 
                   id="name"
-                  required
+                  
                 >
               </div>
               <label for="email" class="hidden mb-2 text-sm font-medium">Email address</label>
@@ -29,7 +29,7 @@
                     v-model="email"
                     type="email"
                     id="email"
-                    required
+                    
                   >
                   <button
                     type="submit"
@@ -131,7 +131,7 @@ const responseMessage = ref('');
 
 const submitForm = async () => {
   try {
-    const response = await axiosInstance.post('/submit', {
+    const response = await axiosInstance.post('/wishlist/submit', {
       name: name.value,
       email: email.value,
     });
