@@ -8,9 +8,9 @@
       relative sm:justify-between md:px-12"
     >
       <div class="text-area px-5 md:mx-9 md:px-5 
-        py-14 md:mt-10"
+        pt-14 md:mt-10"
       >
-        <h1 class="text-auto mb-2 text-4xl md:text-7xl font-black text-blue-950 mt-2 leading-tight md:leading-none md:">Why go solo when learning is better <br> together?</h1>
+        <h1 class="text-auto mb-2 text-4xl md:text-7xl font-black text-blue-deep mt-2 leading-tight md:leading-none md:">Why go solo when learning is better <br> together?</h1>
         <p class="text-auto max-w-xs text-md leading-relaxed px-2 py-3 text-blue-1000 md:px-3 md:text-lg md:">Connect with like-minded nerds has never been easier
           
           say hello to a new era of social studying
@@ -18,7 +18,7 @@
         <div class="grid p-2 space-y-2 md:py-8 md:flex md:space-x-2">
           <input type="text" placeholder="Enter your name" name="" class="block h-8 px-1 py-1 md:px-3 md:py-2 md:h-14 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400"> 
           <input type="email" placeholder="Enter your email" name="" class="block h-8 px-1 py-1 md:px-3 md:py-2 md:h-14 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400"> 
-          <button class="bg-blue-950 text-[10px] 
+          <button class="bg-blue-deep text-[15px] 
             h-8 px-2 py-1 md:text-[20px] 
             md:h-14 md:py-2 md:px-3 font-bold text-white 
             rounded-md md:font-extrabold "
@@ -29,10 +29,8 @@
         
       </div>
 
-      <div class="mx-auto items-center justify-center text-center md:py-8">
-        <img :src="vector"  class="vec md:w-[30%] w-[59%] bottom-1 md:top-[155px] inline absolute  mx-3 md:right-36">
-          <img :src="profile" class="prof w-[200px] -top-1 z-10  inline relative mx-9 md:w-[97%] md:top-[-5px] md:right-24" alt="">
-        </img>
+      <div class="mx-auto items-center text-center top-1 md:py-8">
+        <img :src="HeroImage" class="top-0 md:w-[500px]" alt="" srcset="">
       </div>
 
       <div class="right-0 bottom-0 mt-10 absolute animate-bounce">
@@ -51,8 +49,7 @@
 
 <script setup>
 import imge from '@/assets/bground.png';
-import vector from '@/assets/vector.png';
-import profile from '@/assets/girl.png';
+import HeroImage from '@/assets/vec-girl.svg'
 import icon from '@/assets/wtvec.png'
 import { ref } from 'vue'
 import axiosInstance from '@/axios';

@@ -30,7 +30,7 @@
           <!-- Desktop Menu Links (only visible on web) -->
           <div class="hidden lg:flex space-x-8">
             <div class="flex space-x-4">
-              <a v-for="item in navigation" :key="item.name" :href="item.href" :class="[item.current ? 'bg-white text-blue-light' : 'text-blue-deep hover:text-blue-light', 'rounded-md px-3 py-2 text-sm font-medium']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</a>
+              <a v-for="item in navigation" :key="item.name" :href="item.href" :class="[item.current ? 'text-blue-light' : 'text-blue-deep hover:text-blue-light', 'rounded-md px-3 py-2 text-sm font-medium']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</a>
             </div>
           </div>
         </div>
@@ -47,21 +47,13 @@
 </template>
 
 <script setup>
-import {  useRouter } from 'vue-router';
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 import { XMarkIcon } from '@heroicons/vue/24/outline';
 import menu from '@/assets/menu.png'
 
-const router = useRouter();
-
-const toAboutPage = () => {
-  router.push("/about")
-};
 const navigation = [
-  { name: 'Home', href: '/', current: true },
-  { name: 'About', href: '/about', current: false },
+  { name: 'Home', href: '/', current: false },
+  { name: 'About', href: '/about', current: true },
   { name: 'Bootcamp', href: '#', current: false },
 ]
-
-
 </script>

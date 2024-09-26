@@ -1,13 +1,13 @@
 <script setup>
-import NavBar from '@/components/AboutPage/NavBar.vue';
-import HeroPage from '@/components/AboutPage/HeroPage.vue';
-import SlideTwo from '@/components/AboutPage/SlideTwo.vue';
-import SlideThree from '@/components/AboutPage/SlideThree.vue';
-import SlideFour from '@/components/AboutPage/SlideFour.vue';
-import SlideFive from '@/components/AboutPage/SlideFive.vue';
-import SlideSix from '@/components/AboutPage/SlideSix.vue';
-import SlideSeven from '@/components/AboutPage/SlideSeven.vue';
-import SlideEight from '@/components/AboutPage/SlideEight.vue';
+import NavBar from '@/components/About/NavBar.vue';
+import HeroPage from '@/components/About/HeroPage.vue';
+import SlideTwo from '@/components/About/SlideTwo.vue';
+import SlideThree from '@/components/About/SlideThree.vue';
+import SlideFour from '@/components/About/SlideFour.vue';
+import SlideFive from '@/components/About/SlideFive.vue';
+import SlideSix from '@/components/About/SlideSix.vue';
+import SlideSeven from '@/components/About/SlideSeven.vue';
+import SlideEight from '@/components/About/SlideEight.vue';
 import FooterPage from '@/components/FooterPage.vue';
 </script>
 

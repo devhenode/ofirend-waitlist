@@ -3,7 +3,7 @@
    <div>
      <h2 class="pb-2 text-blue-300 font-bold">Who are we</h2>
  
-     <h1 class="pb-2 text-blue-950 font-bold">Learn and Earn</h1>
+     <h1 class="pb-2 text-blue-deepp font-bold">Learn and Earn</h1>
  
      <p class="pb-8 text-gray-500">
        Ofriend Edu is a dynamic online platform connecting 

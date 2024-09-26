@@ -1,7 +1,7 @@
 <script setup>
 import NavBar from '@/components/NavBar.vue';
-import MainPage from '@/components/Hero/MainPage.vue'
-import PageTwo from '@/components/Hero/PageTwo.vue'
+import MainPage from '@/components/Home/MainPage.vue'
+import PageTwo from '@/components/Home/PageTwo.vue'
 </script>
 
 <template>

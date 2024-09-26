@@ -1,9 +1,9 @@
 <template>
   <!-- Input Box section to collect data -->
-  <section class="mx-4 w-[90%] md:mx-20 rounded-3xl bg-white dark:bg-blue-950">
+  <section class="mx-4 w-[90%] md:mx-20 rounded-3xl bg-white dark:bg-blue-deep ">
     <div class="py-4 md:max-w-full md:py-8 md:px-2">
       <div class=" md:mx-10">
-        <h2 class="mb-2 text-sm text-center whitespace-nowrap italic font-bold text-white md:text-5xl ">Subscribe to get notified on new updates</h2>
+        <h2 class="mb-2 text-sm text-center whitespace-nowrap italic font-bold text-white md:text-5xl">Subscribe to get notified on new updates</h2>
         <p class="mb-8 font-light whitespace-nowrap md:text-2xl md:mb-12 text-center text-[9px] text-white">Stay in touch, so we can reach out to you with our latest <br> news and exclusive offers.</p>
         
         <form @submit.prevent="submitForm">
@@ -33,7 +33,7 @@
                   >
                   <button
                     type="submit"
-                    class="absolute text-sm md:text-lg right-0 top-0 h-full px-3 md:px-5 font-medium text-center text-white bg-sky-300 rounded-lg cursor-pointer hover:bg-sky-600 focus:ring-4 focus:ring-sky-300 dark:bg-sky-600 dark:hover:bg-sky-700 dark:focus:ring-sky-800"
+                    class="absolute text-sm md:text-lg right-0 top-0 h-full px-3 md:px-5 font-medium text-center text-white bg-blue-light rounded-lg cursor-pointer hover:bg-blue-light focus:ring-4 focus:ring-sky-300 dark:bg-blue-light dark:hover:bg-sky-700 dark:focus:ring-sky-800"
                     
                   >
                     Subscribe
@@ -66,12 +66,12 @@
         </div>
 
         <div class="flex justify-between">
-          <div class="grid whitespace-nowrap text-[9px] md:px-4 md:text-[16px] justify-between">
+          <div class="grid whitespace-nowrap text-[10px] md:px-4 md:text-[16px] justify-between">
             <p>Phone number</p>
             <p>09018699546</p>
           </div>
 
-          <div class="grid pl-2 text-[9px] md:text-[16px] md:mx-3 justify-between">
+          <div class="grid pl-2 text-[10px] md:text-[16px] md:mx-3 justify-between">
             <p>Email</p>
             <a class="underline">ofriend@gmail.com</a>
           </div>
@@ -79,15 +79,15 @@
         </div>
       </div>
       <div class="flex my-5 h-2/3 ml-9 space-y-4 space-x-2 justify-between">
-        <div class="grid text-[9px] md:text-[16px] mt-5 text-nowrap space-y-6">
+        <div class="grid text-[10px] md:text-[16px] mt-5 text-nowrap space-y-6">
           <a v-for="link in footerOne" :key="link.name" :href="link.href">{{ link.name }}</a>
         </div>
 
-        <div class="grid text-[9px] md:text-[16px]  space-y-6">
+        <div class="grid text-[10px] md:text-[16px]  space-y-6">
           <a v-for="link in footerTwo" :key="link.name" :href="link.href">{{ link.name }}</a>
         </div>
 
-        <div class="grid text-nowrap text-[9px] md:text-[16px] space-y-6">
+        <div class="grid text-nowrap text-[10px] md:text-[16px] space-y-6">
           <a v-for="link in footerThree" :key="link.name" :href="link.href">{{ link.name }}</a>
         </div>     
       </div>
