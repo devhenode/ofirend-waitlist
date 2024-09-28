@@ -15,7 +15,7 @@
           
           say hello to a new era of social studying
         </p>
-        <div class="grid p-2 space-y-2 md:py-8 md:flex md:space-x-2">
+        <div class="grid p-2 space-y-2 md:space-y-0 md:py-8 md:flex md:space-x-2">
           <input type="text" placeholder="Enter your name" name="" class="block h-8 px-1 py-1 md:px-3 md:py-2 md:h-14 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400"> 
           <input type="email" placeholder="Enter your email" name="" class="block h-8 px-1 py-1 md:px-3 md:py-2 md:h-14 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400"> 
           <button class="bg-blue-deep text-[15px] 
