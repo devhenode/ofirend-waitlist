@@ -1,19 +1,19 @@
 <template>
   <main>
     <div class="px-6 py-4 bg-[#CDF5FF]">
-      <div>
-        <div class="mb-3">
+      <div class="md:flex justify-between md:items-center">
+        <div class="mb-3 md:mb-0 md:w-80">
           <h3 class="text-[#007DFF] font-bold text-lg">Our Approach</h3>
           <h1 class="text-4xl font-extralight">Access, Connect, Thrive</h1>
-          <p class="text-gray-600">
+          <p class="text-gray">
             Ofriend Edu : Unlocking potential through Access 
             (quality learning), Connection(industry experts & community) 
             and Opportunity(Skill development& entrepreneurship).
           </p>
         </div>
 
-        <div>
-          <div class="bg-white px-4 py-4 rounded-xl border border-slate-300 mb-3">
+        <div class="md:grid md:w-3/5 md:px-3 md:grid-cols-2 md:gap-2">
+          <div class="bg-white px-4 py-4 rounded-xl mb-3">
             <div class="mb-2">
               <!-- svg -->
               <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,14 +27,14 @@
                 E-lbrary
               </h3>
 
-              <p class="text-gray-600">
+              <p class="text-gray">
                 A vast digital repository of quality educational 
                 materials, enabling students to access and share knowledge freely.
               </p>
             </div>
           </div>
 
-          <div class="bg-white px-4 py-4 rounded-xl border border-slate-300 mb-3">
+          <div class="bg-white px-4 py-4 rounded-xl mb-3">
             <div class="mb-2">
               <!-- svg -->
               <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,13 +48,13 @@
                 Community Forun
               </h3>
 
-              <p class="text-gray-600">
+              <p class="text-gray">
                 A vibrant space for learners to interact, share experiences, and connect with peers and mentors.  
               </p>
             </div>
           </div>
 
-          <div class="bg-white px-4 py-4 rounded-xl border border-slate-300 mb-3">
+          <div class="bg-white px-4 py-4 rounded-xl mb-3">
             <div class="mb-2">
               <!-- svg -->
               <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -68,13 +68,13 @@
                 Training and certification
               </h3>
 
-              <p class="text-gray-600">
+              <p class="text-gray">
                 Structured programs with industry-recognized certification and internship opportunities, preparing students for the workforce.  
               </p>  
             </div>
           </div>
 
-          <div class="bg-white px-4 py-4 rounded-xl border border-slate-300 mb-3">
+          <div class="bg-white px-4 py-4 rounded-xl mb-3">
             <div class="mb-2">
               <!-- svg -->
               <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -88,7 +88,7 @@
                 Monetization opportunities
               </h3>
 
-              <p class="text-gray-600">
+              <p class="text-gray">
                 Empowering students to sell their articles and research, fostering a culture of innovation and entrepreneurship.
               </p>
             </div>

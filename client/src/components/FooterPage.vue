@@ -13,7 +13,7 @@
               <div>
                 <label for="name" class="hidden mb-2 text-sm font-medium">Name</label>
                 <input 
-                  class="p-2 mb-2 md:p-3 text-sm md:pl-4 md:text-lg w-full text-black rounded-xl border border-gray-300 focus:ring-primary-500 focus:border-primary-500 bg-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                  class="p-2 mb-2 md:p-3 text-sm md:pl-4 md:text-lg w-full text-black rounded-xl border border-gray focus:ring-primary-500 focus:border-primary-500 bg-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                   type="text" 
                   placeholder="Enter your name"
                   v-model="name" 
@@ -24,7 +24,7 @@
               <label for="email" class="hidden mb-2 text-sm font-medium">Email address</label>
                 <div class="relative flex items-center">
                   <input
-                    class="block p-2 md:p-3 text-sm md:pl-4 md:text-lg w-full text-black rounded-xl border border-gray-300 focus:ring-primary-500 focus:border-primary-500 bg-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                    class="block p-2 md:p-3 text-sm md:pl-4 md:text-lg w-full text-black rounded-xl border border-gray focus:ring-primary-500 focus:border-primary-500 bg-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                     placeholder="Enter your email"
                     v-model="email"
                     type="email"
@@ -92,11 +92,11 @@
         </div>     
       </div>
     </div>
-    <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+    <hr class="h-px my-8 bg-gray border-0 dark:bg-gray">
      
     <div class="flex justify-between px-4">
       <div>
-        <p class="text-gray-900">copyright 2024 ofriend Inc.</p>
+        <p class="text-gray">copyright 2024 ofriend Inc.</p>
       </div>
 
       <div class="flex justify-evenly">

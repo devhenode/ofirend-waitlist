@@ -5,8 +5,8 @@
         <h2 class="text-center py-8 font-bold text-3xl">Our Values</h2>
       </div>
 
-      <div class="space-y-4">
-        <div class="bg-[#CDF5FF] rounded-xl justify-center border border-slate-300 py-6">
+      <div class="space-y-4 md:mx-8 md:space-y-0 md:grid md:grid-cols-3 md:space-x-5">
+        <div class="bg-[#CDF5FF] rounded-xl justify-center py-6">
           <div class="p-4">
             <!-- svg -->
             <svg class="mx-auto" width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -18,13 +18,13 @@
           <div class="text-center">
             <h3 class="text-[#07284A] text-2xl">Learning and Earning</h3>
           
-            <p class="text-[#00A0DB] text-md">Bridging the gap between learning and 
+            <p class="text-[#00A0DB] text-md px-2">Bridging the gap between learning and 
               Earning
             </p>
           </div>
         </div>
 
-        <div class="bg-[#FDEBD8] rounded-xl justify-center border border-slate-300 py-6">
+        <div class="bg-[#FDEBD8] rounded-xl justify-center py-6">
           <div class="p-4">
             <!-- svg -->
             <svg class="mx-auto" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,12 +36,12 @@
           <div class="text-center">
             <h3 class="text-[#92301A] text-2xl">Comprehend Platform</h3>
   
-            <p class="text-[#EB6924] text-md">Offering entertainment, education and entrepreneurship opportunities in one app.
+            <p class="text-[#EB6924] text-md px-2">Offering entertainment, education and entrepreneurship opportunities in one app.
             </p>
           </div>
         </div>
 
-        <div class="bg-[#E0F8E2] rounded-xl justify-center border border-slate-300 py-6">
+        <div class="bg-[#E0F8E2] rounded-xl justify-center py-6">
           <div class="p-4">
             <!-- svg -->
             <svg class="mx-auto" width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,7 +53,7 @@
           <div class="text-center">
             <h3 class="text-[#205B27] text-2xl">Empowerment</h3>
         
-            <p class="text-[#38AF48] text-md">Empowering learners to acquire knowledge, develop skills, and monetize their expertise.
+            <p class="text-[#38AF48] px-2 text-md">Empowering learners to acquire knowledge, develop skills, and monetize their expertise.
             </p>
           </div>
         </div>
